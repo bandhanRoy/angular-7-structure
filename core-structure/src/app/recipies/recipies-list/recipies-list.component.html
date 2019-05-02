@@ -8,7 +8,7 @@
 <div class="row mt-auto">
     <div class="col-md-12">
         <div class="list-group">
-            <app-recipies-item *ngFor="let recipieEl of recipies" [recipe]="recipieEl"></app-recipies-item>
+            <app-recipies-item *ngFor="let recipieEl of recipies" [recipe]="recipieEl" (recipeSelected)="onRecipeSelected(recipieEl)"></app-recipies-item>
         </div>
     </div>
 </div>
